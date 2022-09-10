@@ -1,9 +1,3 @@
-//
-//  SceneDelegate.swift
-//  MovieDatabase
-//
-//  Created by Sunil Jakhar on 10/09/22.
-//
 
 import UIKit
 
@@ -47,7 +41,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
 
         // Save changes in the application's managed object context when the application transitions to the background.
-        (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+        DatabaseOperation().saveContext()
     }
 
 
